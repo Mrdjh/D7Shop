@@ -16,7 +16,7 @@ class Login extends Base
     //用户登录
     public function LoginWeb()
     {
-        dump('testsss');
+        dump('daixs');
     }
     //显示登录界面
     public function reglogin()
