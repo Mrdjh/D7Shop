@@ -33,10 +33,6 @@ http://localhost:8000
 ~~~
 composer update topthink/framework
 ~~~
-
-
-
-
 ## 命名规范
 
 `ThinkPHP5`遵循PSR-2命名规范和PSR-4自动加载规范，并且注意如下规范：

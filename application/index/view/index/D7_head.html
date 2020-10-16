@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
+<script src="static/layui/jquery-3.2.1.min.js"></script>
+<script src="static/layui/layui.js"></script>
+<script>
+    layui.use('layer', function(){
+        var $ = layui.$ //由于layer弹层依赖jQuery，所以可以直接得到
+            ,layer = layui.layer;
+        $("#d7_login_reg").click(function () {
+
+            // layer.open({
+            //     type: 1
+            //     ,id: 'layerDemo' //防止重复弹出
+            //     // ,btnAlign: 'c' //按钮居中
+            //     ,shade: 0.3 //不显示遮罩
+            //     ,shadeClose: true //点击遮罩区域是否关闭页面
+            //     ,closeBtn: 1 //关闭按钮是否显示 1显示0不显示
+            //      ,title: '登录<=>注册' //页面标题
+            //      ,area: ['600px', '500px']  //弹出层页面比例
+            //     ,content: $("#reglogin")//id="reglogin"
+            //     // ,yes: function(){
+            //     //     layer.closeAll();
+            //     // }
+            // });
+
+        });
+    });
+</script>
 <body>
-$END$
+我是顶部导航
+<a href="{:url('/index/login/reglogin')}">登录与注册</a>
 </body>
 </html>
